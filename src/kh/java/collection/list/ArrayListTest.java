@@ -276,7 +276,7 @@ public class ArrayListTest {
 		Collections.sort(list);
 		System.out.println(list);
 		
-		//번호 내칢차순 정렬 : 별도로 비교 기준을 가진 
+		//번호 내림차순 정렬 : 별도로 비교 기준을 가진 
 		//                Comparator구현 클래스 작성
 		Comparator comp = new DescendingByNo();
 		Collections.sort(list, comp);

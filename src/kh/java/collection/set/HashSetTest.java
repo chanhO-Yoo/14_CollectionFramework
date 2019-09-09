@@ -20,8 +20,8 @@ public class HashSetTest {
 //		h.test3(); //list - set 변환(중복 제거)
 //		h.test4(); //저장 순서를 유지하는 LinkedHashSet
 //		h.test5(); //treeset 사용(오름차순정렬 지원)
-//		h.test6(); //hashset - hashing을 이용한 비교
-		h.test7(); //컬랙션객체 이용하여 로또만들기
+		h.test6(); //hashset - hashing을 이용한 비교
+//		h.test7(); //컬랙션객체 이용하여 로또만들기
 	}
 	
 	public void test1() {
@@ -130,7 +130,7 @@ public class HashSetTest {
 		linkedSet.add(new Student("c",3));
 		linkedSet.add(new Student("d",2));
 		linkedSet.add(new Student("e",1));
-		System.out.println(linkedSet); // 저장 순서를 보장하지 않는다.
+		System.out.println(linkedSet); // 저장 순서를 보장한다.
 
 		//set 정렬하기
 		//1.List 이용하여 정렬
@@ -171,7 +171,7 @@ public class HashSetTest {
 
 		//학생번호, 학생이름이 같다면 동일한 객체로 취급
 		//객체단위 비교연산(equals, hashCode 오버라이딩 필수
-		set.add(new Student("e",1));
+		set.add(new Student("e",6));
 		System.out.println(set);
 		
 	}

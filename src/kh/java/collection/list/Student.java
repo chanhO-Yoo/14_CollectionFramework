@@ -59,9 +59,9 @@ public class Student implements Comparable<Student> {
 		 //객체의 필드값에 직접 접근할 수 없어 형변환 실행
 		 Student other = (Student)obj;
 		 
-		 if(!name.equals(other.name)) {
-			 return false;
-		 }
+//		 if(!name.equals(other.name)) {
+//			 return true;
+//		 }
 		 if(no != other.no) {
 			 return false;
 		 }
@@ -77,7 +77,7 @@ public class Student implements Comparable<Student> {
 //		 return (31+name+no).hashCode();//비트연산하는데 유리한 수 = 31을 사용
 		 
 		 //Objects.hash() : jdk1.8이상
-		 return Objects.hash(no,name);
+		 return Objects.hash(no);
 		 
 	 }
 }
