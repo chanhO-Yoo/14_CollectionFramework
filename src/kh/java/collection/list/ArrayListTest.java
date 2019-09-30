@@ -165,7 +165,7 @@ public class ArrayListTest {
 		// int, double, boolean... =? Integer, Double, Boolean 객체 사용
 		List<Integer> intList = new ArrayList<>();
 		intList.add(1); //기본형을 바로 추가 가능
-		intList.add(new Integer(100)); //autoboxing 지원 
+		intList.add(new Integer(100)); //autoboxing 지원 = intList.add(100);
 		
 		int num = intList.get(0);
 //		Integer iNum = intList.get(0);
@@ -245,7 +245,7 @@ public class ArrayListTest {
 		System.out.println(list);
 		
 		//정렬 : String, Integer, ... 
-		//기본적으로 정렬메서드(Comparabl.compareTo()메서드)를
+		//기본적으로 정렬메서드(Comparable.compareTo()메서드)를
 		//가지고 있다.
 		
 		//오름차순 정렬 기본
